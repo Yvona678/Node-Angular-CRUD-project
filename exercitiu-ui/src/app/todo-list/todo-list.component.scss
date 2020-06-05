@@ -1,0 +1,70 @@
+li {
+    display: inline-flex;
+}
+.icon{
+  color:black;
+}
+.icon:hover{
+color: grey;
+}
+.button-update{
+  position:absolute;
+  top:10%;
+  left:85%;
+  padding-top: 2px;
+  background:white;
+
+}
+.button-cancel{
+  position:absolute;
+  top:10%;
+  left:90%;
+  padding-top: 2px;
+  background:white;
+
+}
+.button-ed{
+  position:absolute;
+  top:10%;
+  left:90%;
+  padding-top: 2px;
+  background:white;
+
+}
+.button-del{
+  position:absolute;
+  top:10%;
+  left:95%;
+  padding-top: 2px;
+  background:white;
+
+}
+.remove-all-button{
+  background-color: #e9ecef;
+  border: solid #ced4da 1px;
+border-radius: .25rem;
+}
+.remove-all-button:hover{
+  border: solid rgb(201, 224, 224) 1px;
+  background: rgb(205, 212, 205);
+  border-radius: .25rem;
+}
+@media only screen and (max-width: 790px) {
+  .button-ed{
+    position:absolute;
+    top:10%;
+    left:75%;
+    padding-top: 2px;
+    background:white;
+
+  }
+  .button-del{
+    position:absolute;
+    top:10%;
+    left:85%;
+    padding-top: 2px;
+    background:white;
+
+  }
+
+  }

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h2 *ngIf="itemList.length==0">Lista este goala</h2>
+<div>
+
+    <ul class="list-group">
+
+        <li class="list-group-item" *ngFor="let item of itemList.reverse()">
+          <table>
+            <tr>
+            <td id="input-{{item.id}}">
+              {{item.name}}
+            </td>
+            <td>
+              <div class="button-update" id="update-{{item.id}}"  hidden = true>
+                <button title="Save new input" class="btn"  (click)="onClickUpdate(item)"><i class="icon fa fa-save "></i></button>
+              </div>
+            </td>
+            <td>
+              <div class="button-cancel" id="cancel-{{item.id}}" hidden = true>
+                <button title="Cancel"class="btn"  (click)="onClickCancelUpdate(item.id)"><i class="icon fa fa-close "></i></button>
+              </div>
+            </td>
+            <td>
+              <div class="button-ed" id="edit-{{item.id}}">
+                <button title="Edit element"class="btn"  (click)="onClickMakeEditable(item.id)"><i class="icon fa fa-edit "></i></button>
+              </div>
+            </td>
+            <td>
+              <div class="button-del">
+                <button title="Delete element" class="btn" (click)="onClickDelete(item.id)"><i class="icon fa fa-trash"></i></button>
+              </div>
+
+            </td>
+          </tr>
+
+          </table>
+        </li>
+    </ul>
+</div>
